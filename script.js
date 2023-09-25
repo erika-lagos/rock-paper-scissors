@@ -125,9 +125,9 @@ function initialize() {
     resetSelection(computerOptionsElements);
     resetSelection(playerOptionsElements);
     gameEnabled = true;
-    let round = 1;
-    let playerScore = 0;
-    let computerScore = 0;
+    round = 1;
+    playerScore = 0;
+    computerScore = 0;
     playerScoreElement.textContent  = playerScore;
     computerScoreElement.textContent  = computerScore;
     roundElement.textContent = `Round ${round}`;
