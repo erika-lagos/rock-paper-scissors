@@ -3,10 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js"></script>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <h1 class="header">Play Rock Paper Scissors with me!</h1>
+    <div class="score-keeper">
+        <p class="round">Round 1</p>
+        <ul>
+            <li class="player-score">0</li>
+            <li class="computer-score">0</li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="player-view">
+            <h2>Player</h2>
+            <h3>Pick one:</h3>
+            <ul>
+                <li class="player-option" data-choice="rock"><img src="images/rock.png" data-choice="rock"></li>
+                <li class="player-option" data-choice="paper"><img src="images/paper.png" data-choice="paper"></li>
+                <li class="player-option" data-choice="scissors"><img src="images/scissors.png" data-choice="scissors"></li>
+            </ul>
+            <p class="player-choice"></p>
+            <p class="result">Make a selection to start playing</p>
+        </div>
+        <div class="player-view">
+            <h2>Computer</h2>
+            <h3>Computer picks:</h3>
+            <ul>
+                <li class="computer-option" data-choice="rock"><img src="images/rock.png" data-choice="rock"></li>
+                <li class="computer-option" data-choice="paper"><img src="images/paper.png" data-choice="paper"></li>
+                <li class="computer-option" data-choice="scissors"><img src="images/scissors.png" data-choice="scissors"></li>
+            </ul>
+            <p class="computer-choice"></p>
+        </div>
+    </div>
     
+
 </body>
 </html>
